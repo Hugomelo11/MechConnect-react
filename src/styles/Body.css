@@ -1,0 +1,33 @@
+.body {
+  
+    position: absolute;
+    width: 1392px;
+    height: 72px;
+    left: 117px;
+    top: 650px;
+  /* Sub-page H1 */
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height, or 150% */
+  
+  text-align: center;
+  letter-spacing: -0.015em;
+  
+  color: #000000;
+  }
+  
+  .body-form {
+    box-sizing: border-box;
+  
+  position: absolute;
+  width: 622px;
+  height: 439px;
+  left: 418px;
+  top: 195px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5); }

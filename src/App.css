@@ -1,43 +1,8 @@
 
-
-
-
-.App-header {
-  box-sizing: border-box;
-
-position: absolute;
-width: 1513px;
-height: 80px;
-left: -1px;
-top: 0px;
-
-background: #FFFFFF;
-display:flex;
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.header-logo {
-  position: absolute;
-  display:flex;
-width: 120px;
-height: 50px;
-left: 42px;
-top: 2px;
-}
 
 .button {
   position: absolute;
@@ -63,59 +28,6 @@ letter-spacing: 0.025em;
 color: #18A0FB;
 }
 
-.hero {
-  position: absolute;
-width: 686px;
-height: 36px;
-left: 766px;
-top: 220px;
-
-
-/* Body H4 */
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height, or 150% */
-
-letter-spacing: -0.015em;
-
-color: #000000;
-
-}
-
-.hero-h3 {
-  position: absolute;
-width: 600px;
-height: 90px;
-left: 766px;
-top: 279px;
-
-/* Body P */
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-/* or 167% */
-
-letter-spacing: -0.015em;
-
-color: rgba(0, 0, 0, 0.8);
-
-}
-
-.hero-img {
-  position: absolute;
-  width: 650px;
-  height: 300px;
-  left: 70px;
-  top: 150px;
-}
-
 .button-scnd {
   position: absolute;
 width: 80px;
@@ -138,45 +50,7 @@ letter-spacing: 0.025em;
 color: #18A0FB;
 }
 
-.hero-btOne {
-  position: absolute;
-width: 200px;
-height: 65px;
-left: 916px;
-top: 425px;
-background-color: #18A0FB;
-border-radius: 6px;
-}
 
-.hero-btwo {
-  position: absolute;
-width: 200px;
-height: 65px;
-left: 1200px;
-top: 425px;
-background-color: #FFFFFF;
-border-radius: 6px;
 
-}
 
-.body {
-  
-  position: absolute;
-  width: 1392px;
-  height: 72px;
-  left: 117px;
-  top: 650px;
-/* Sub-page H1 */
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 72px;
-/* identical to box height, or 150% */
-
-text-align: center;
-letter-spacing: -0.015em;
-
-color: #000000;
-}
