@@ -1,10 +1,11 @@
 .body {
   
-    position: absolute;
-    width: 1392px;
+    position:relative;
+    box-sizing: inherit;
+    width: 1000px;
     height: 72px;
     left: 117px;
-    top: 650px;
+    top: 550px;
   /* Sub-page H1 */
   
   font-family: 'Montserrat';
@@ -26,8 +27,17 @@
   position: absolute;
   width: 622px;
   height: 439px;
-  left: 418px;
-  top: 195px;
+  left: 275px;
+  top: 695px;
   
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.5); }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  } 

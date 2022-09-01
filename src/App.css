@@ -1,54 +1,11 @@
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 
-.button {
-  position: absolute;
-width: 69px;
-height: 18px;
-left: 250px;
-top: 26px;
-background-color:#FFFFFF;
-border: none;
 
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.025em;
 
-/* Actionable Item */
-
-color: #18A0FB;
-}
-
-.button-scnd {
-  position: absolute;
-width: 80px;
-height: 18px;
-left: 348px;
-top: 26px;
-
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.025em;
-
-/* Actionable Item */
-
-color: #18A0FB;
-}
 
 
 

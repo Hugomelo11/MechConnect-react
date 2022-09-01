@@ -1,5 +1,6 @@
 .hero {
     flex-flow: column;
+    box-sizing: inherit;
     left: 0%;
     right: 0%;
     top: 4.56%;
@@ -7,14 +8,14 @@
     
     background: #FFFFFF;
   
-  }
-
+  
+}
   .hero-h2 {
     position: absolute;
-width: 686px;
+width: 530px;
 height: 36px;
-left: 866px;
-top: 220px;
+left: 560px;
+top: 190px;
 
 /* Body H4 */
 
@@ -34,8 +35,8 @@ color: #000000;
     position: absolute;
   width: 600px;
   height: 90px;
-  left: 766px;
-  top: 279px;
+  left: 560px;
+  top: 250px;
   
   /* Body P */
   
@@ -53,8 +54,8 @@ color: #000000;
   }
   .hero-img {
     position: absolute;
-    width: 650px;
-    height: 300px;
+    width: 400px;
+    height: 250px;
     left: 70px;
     top: 150px;
   }
@@ -63,8 +64,8 @@ color: #000000;
     position: absolute;
   width: 200px;
   height: 65px;
-  left: 916px;
-  top: 425px;
+  left: 616px;
+  top: 405px;
   background-color: #18A0FB;
   border-radius: 6px;
   }
@@ -73,8 +74,8 @@ color: #000000;
     position: absolute;
   width: 200px;
   height: 65px;
-  left: 1200px;
-  top: 425px;
+  left: 900px;
+  top: 405px;
   background-color: #FFFFFF;
   border-radius: 6px;
   

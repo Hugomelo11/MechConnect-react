@@ -1,9 +1,9 @@
 .App-header {
-    box-sizing: border-box;
+    box-sizing: inherit;
 
     position: absolute;
     width: 1513px;
-    height: 80px;
+    height: 60px;
     left: -1px;
     top: 0px;
     
@@ -13,11 +13,58 @@
   }
 
   .header-logo {
-    position: absolute;
+    position:relative;
     display:flex;
-  width: 120px;
-  height: 50px;
-  left: 42px;
-  top: 2px;
+  width: 90px;
+  height: 35px;
+  left: 32px;
+  top: 15px;
   }
   
+
+  .button {
+    position: absolute;
+  width: 69px;
+  height: 18px;
+  left: 250px;
+  top: 26px;
+  background-color:#FFFFFF;
+  border: none;
+  
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.025em;
+  
+  /* Actionable Item */
+  
+  color: #18A0FB;
+  }
+  
+  .button-scnd {
+    box-sizing: inherit;
+    position: absolute;
+  width: 80px;
+  height: 18px;
+  left: 348px;
+  top: 26px;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.025em;
+  
+  /* Actionable Item */
+  
+  color: #18A0FB;
+  }
