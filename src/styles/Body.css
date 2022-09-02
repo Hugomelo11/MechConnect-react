@@ -24,7 +24,7 @@
   .body-form {
     box-sizing: border-box;
   
-  position: absolute;
+  position:absolute;
   width: 622px;
   height: 439px;
   left: 275px;
@@ -34,10 +34,12 @@
   border: 1px solid rgba(0, 0, 0, 0.5); }
   
   input, textarea, select {
-    width: 100%;
+    width: 70%;
     padding: 6px 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
     box-sizing: border-box;
     display: block;
+
+
   } 
