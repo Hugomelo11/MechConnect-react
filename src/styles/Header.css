@@ -1,8 +1,8 @@
 .App-header {
     box-sizing: inherit;
 
-    position: absolute;
-    width: 1513px;
+    /* position: absolute; */
+    /* width: 1253px; */
     height: 60px;
     left: -1px;
     top: 0px;
@@ -22,7 +22,7 @@
   }
   
 
-  .button {
+  .home-button {
     position: absolute;
   width: 69px;
   height: 18px;
@@ -46,7 +46,7 @@
   color: #18A0FB;
   }
   
-  .button-scnd {
+  .about-us-btn {
     box-sizing: inherit;
     position: absolute;
   width: 80px;
@@ -54,7 +54,7 @@
   left: 348px;
   top: 26px;
   
-  font-family: 'Montserrat';
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;

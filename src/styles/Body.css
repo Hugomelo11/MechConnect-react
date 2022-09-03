@@ -1,3 +1,4 @@
+
 .body {
   
     position:relative;
@@ -33,8 +34,8 @@
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.5); }
   
-  input, textarea, select {
-    width: 70%;
+  input, select {
+    width: 20%;
     padding: 6px 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
@@ -43,3 +44,20 @@
 
 
   } 
+.input-name{
+  width: 40%;
+    padding: 6px 10px;
+    margin: 10px 0;
+ 
+
+}
+  /* textarea {
+    width: 30%;
+    height: 26px;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}  */
+  
