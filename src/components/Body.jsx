@@ -14,7 +14,7 @@ export default function Body(props) {
   async function formSubmit(e) {
     e.preventDefault(); /// stops the page refresh
     try {
-      const results = await fetch("http://localhost:5000", {
+      const results = await fetch( "http://localhost:5000/newVehicle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export default function Body(props) {
       console.log(results);
       const data = await results.json();
       console.log(data);
-      setForm();
+      setForm({});
     } catch (err) {
       console.error();
     }
@@ -95,9 +95,9 @@ export default function Body(props) {
             required
             placeholder="First Name"
             className="input-name"
-            noChance={updateForm}
+            onChange={updateForm}
             value={form.firstName}
-            name="First Name"
+            name="FirstName"
             
           />
           <Input
@@ -106,7 +106,15 @@ export default function Body(props) {
             className="input-name"
             onChange={updateForm}
             value={form.lastName}
-            name="Last Name"
+            name="LastName"
+          />
+          <Input
+            required
+            placeholder="Address"
+            className="input-name"
+            onChange={updateForm}
+            value={form.Address}
+            name="Address"
           />
           <br />
           <label>Vehicle Information</label>

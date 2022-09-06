@@ -1,10 +1,22 @@
-import Header from "../components/Header"
+import { useEffect, useState } from "react";
+import React from "react";
+import Vehicle from "../components/Vehicle";
 
-export default function MechPage () {
-    return(
-        <>
-        <h1>this is mechanic page</h1>
+export default function MechPage() {
+  // const WorkList = ()=>{
+  const [allVehicles, setAllVehicles] = useState([]);
 
-        </>
-    )
+  useEffect(() => {
+    fetch("http://localhost:5000/vehicles")
+      .then((response) => response.json())
+      .then((data) => setAllVehicles(data));
+  }, []);
+
+  return (
+    <>
+      {allVehicles.map((vehicle) => {
+        return <Vehicle vehicle={vehicle} />;
+      })}
+    </>
+  );
 }
