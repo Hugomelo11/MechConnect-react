@@ -1,9 +1,10 @@
+import '../styles/Footer.css'
 
-
-export default function Footer () {
+export default function Footer() {
     return (
         <>
-        <footer>a foot</footer>
+    <footer className='footer'>FOOTER</footer>
+
         </>
     )
 }

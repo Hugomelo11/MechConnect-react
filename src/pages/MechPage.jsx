@@ -9,13 +9,16 @@ export default function MechPage() {
   useEffect(() => {
     fetch("http://localhost:5000/vehicles")
       .then((response) => response.json())
-      .then((data) => setAllVehicles(data));
+      .then((data) => setAllVehicles(data))
+      .catch((err) => console.error(err))
   }, []);
+
 
   return (
     <>
       {allVehicles.map((vehicle) => {
-        return <Vehicle vehicle={vehicle} />;
+
+        return <Vehicle key={vehicle._id} vehicle={vehicle} />;
       })}
     </>
   );

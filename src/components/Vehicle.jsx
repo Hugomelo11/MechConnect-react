@@ -14,12 +14,13 @@ const Vehicle = ({ vehicle }) => (
               title="Customer Information"
               extra={<a href="#">More</a>}
             >
-              <p>First Name: {vehicle.FirstName}</p>
-              <p>Last Name: {vehicle.LastName}</p>
-              <p>Make: {vehicle.make}</p>
-              <p>Model: {vehicle.model}</p>
-              <p>Year: {vehicle.year}</p>
-              <p>Service: {vehicle.service}</p>
+              <p>First Name: {vehicle.info.FirstName}</p>
+              <p>Last Name: {vehicle.info.LastName}</p>
+              <p>Make: {vehicle.info.make}</p>
+              <p>Model: {vehicle.info.model}</p>
+              <p>Year: {vehicle.info.year}</p>
+              <p>Service: {vehicle.info.service}</p>
+              <p>Time: {(new Date(vehicle.createdAt).toLocaleDateString())}</p>
             </Card>
           </Card>
         </Content>
