@@ -157,7 +157,7 @@ export default function Body(props) {
             name="service"
             onChange={updateForm}
           >
-            <option value="" selected>
+            <option value="" >
               Choose Service
             </option>
             <option value="Oil Change">Oil Change</option>
