@@ -1,24 +1,25 @@
-.hero {
-  position:inherit;
+
+Hero {
+
     left: 0%;
     right: 0%;
     top: 1.56%;
-    bottom: 100%; 
+    /* bottom: 100%;  */
     
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
   
   
 }
   .hero-h2 {
-    position:absolute;
+    position:relative;
 width: 530px;
 height: 36px;
-left: 590px;
-top: 190px;
+left: 690px;
+top: 140px;
 
 /* Body H4 */
 
-font-family: 'Montserrat';
+font-family: 'Blinker', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 23px;
@@ -31,15 +32,15 @@ color: #000000;
   }
 
   .hero-h3 {
-    position: absolute;
+    position: relative;
   width: 600px;
   height: 90px;
-  left: 560px;
-  top: 250px;
+  left: 690px;
+  top: 180px;
   
   /* Body P */
   
-  font-family: 'Montserrat';
+  font-family: 'Blinker', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -52,30 +53,34 @@ color: #000000;
   
   }
   .hero-img {
-    position:inherit;
-    width: 50%;
-    height: 0%;
-    left: 3px;
-    top: 100px;
+    position: absolute;
+
+    width: 650px;
+    height:auto;
+    left: 0px;
+    top: 150px;
+    margin: auto;
   }
 
   .hero-btOne {
-    position: absolute;
+    position:fixed;
   width: 200px;
   height: 65px;
-  left: 616px;
-  top: 405px;
-  background-color: #18A0FB;
-  border-radius: 6px;
+  left: 500px;
+  top: 300px;
+  background-color: black;
+
+
   }
   
-  .hero-btwo {
-    position: absolute;
+  /* .hero-btwo {
+    position: inherit;
   width: 200px;
   height: 65px;
-  left: 900px;
-  top: 405px;
-  background-color: #FFFFFF;
+  left: 800px;
+  top: 305px;
+  background-color: #ffffff;
   border-radius: 6px;
+  font:100
   
-  }
+  } */

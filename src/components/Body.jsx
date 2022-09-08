@@ -1,15 +1,10 @@
 import { useState } from "react";
 import { Cascader, Input } from "antd";
+// import { Layout } from "antd"
 import React from "react";
 export default function Body(props) {
   const [form, setForm] = useState({});
-  // const [make, setMake] = useState("");
-  // const [model, setModel] = useState("");
-  // const [year, setYear] = useState("");
-  // const [serviceType, setServiceType] = useState();
-  // const [customerName, setCustomerName] = useState();
-  // const [customerLastName, setCustomerLastName] = useState();
-  // const [isModelDisabled, setIsModelDisabled] = useState(true);
+
 
   async function formSubmit(e) {
     e.preventDefault(); /// stops the page refresh
@@ -45,20 +40,7 @@ export default function Body(props) {
     setForm({ ...form, [event.target.name]: event.target.value });
     // setYear(event.target.value);
   };
-  // const updateServiceType = (event) => {
-  //   setForm({ ...form, [event.target.name]: event.target.value });
-  //   // setServiceType(event.target.value);
-  // };
-  // const updateCustomerLastName = (event) => {
-  //   setForm({ ...form, [event.target.name]: event.target.value });
-  //   // setCustomerLastName(event.target.value);
-  // };
-  // const updateCustomerName = (event) => {
-  //   setForm({ ...form, [event.target.name]: event.target.value });
-  //   // setCustomerName(event.target.value);
-  // };
-
-  // console.log({ make });
+ 
 
   const listOfMakes = [
     { value: "Honda", label: "Honda" }, /// into json file as an option
@@ -86,8 +68,12 @@ export default function Body(props) {
 
   return (
     <>
-      <h1 className="body">Book a service for your vehicle</h1>
-      <div>
+    {/* <Layout>
+      <Body> */}
+      <div className="body">
+      {/* <h1 className="title">this is a title</h1> */}
+      </div>
+        <div>
         <form className="body-form" onSubmit={formSubmit}>
           <label>Customer Information</label>
           <br />
@@ -166,7 +152,10 @@ export default function Body(props) {
           </select>
           <button>Submit</button>
         </form>
-      </div>
+        </div>
+
+      {/* </Body>
+      </Layout> */}
     </>
   );
 }

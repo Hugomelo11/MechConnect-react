@@ -6,6 +6,7 @@
     height: 60px;
     left: -1px;
     top: 0px;
+    width: auto;
     
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -67,4 +68,14 @@
   /* Actionable Item */
   
   color: #18A0FB;
+  }
+
+  .login-button {
+position: absolute;
+    left: 90%;
+    width: 70px;
+
+    background-color: white
+
+    
   }

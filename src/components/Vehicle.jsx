@@ -1,7 +1,7 @@
 import { Card } from "antd";
 import { Layout } from "antd";
 import React from "react";
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 
 const Vehicle = ({ vehicle }) => (
   <>
