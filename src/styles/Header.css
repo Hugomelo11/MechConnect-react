@@ -1,8 +1,8 @@
 .App-header {
     box-sizing:border-box;
 
-    /* position: absolute; */
-    /* width: 1253px; */
+    /* position: fixed; */
+    width: 100%;
     height: 60px;
     left: -1px;
     top: 0px;
@@ -71,11 +71,11 @@
   }
 
   .login-button {
-position: absolute;
+
     left: 90%;
     width: 70px;
 
-    background-color: white
+    background-color: blue;
 
     
   }

@@ -6,49 +6,31 @@
     width: 1000px;
     height: 321px;
     left: 117px;
-    top: 350px;
+    top: 450px;
   /* Sub-page H1 */
   
   }
   
-  .body-form {
-    box-sizing: border-box;
-  
-  position:absolute;
-  width: 622px;
-  height: 439px;
-  left: 275px;
-  top: 695px;
-  
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.5); }
-  
   input, select {
-    width: 20%;
+    width: 40%;
     padding: 6px 10px;
-    margin: 10px 0;
+    margin: 10px 10px;
     border: 1px solid #ddd;
+    border-radius: 8px;
+
     box-sizing: border-box;
-    display: block;
+    display:block;
 
 
   } 
 .input-name{
-  width: 40%;
-    padding: 6px 10px;
-    margin: 10px 0;
- 
+    width: 40%;
+    padding: 7px 10px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    
 
 }
-  /* textarea {
-    width: 30%;
-    height: 26px;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}  */
 
 .title {
   top:123px;
@@ -65,4 +47,3 @@
   
   color: #000000;
 }
-  

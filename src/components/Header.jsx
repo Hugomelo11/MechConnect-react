@@ -18,7 +18,7 @@ export default function Header() {
           MechPage
         </Nav.Link>
       </Nav.Item>
-    {/* <Button className="login-button" as={Link} to="./Login">Login</Button> */}
+    <Button className="login-button" as={Link} to="/Login">Login</Button>
     </Nav>
     </>
   );

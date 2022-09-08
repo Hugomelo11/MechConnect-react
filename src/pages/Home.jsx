@@ -12,12 +12,12 @@ import Layout, { Content } from "antd/lib/layout/layout.js";
 function Home() {
   return (
     <>
-      <Layout>
-        <Content>
+      {/* <Layout> */}
+        {/* <Content> */}
           <Hero />
           <Body />
-        </Content>
-      </Layout>
+        {/* </Content> */}
+      {/* </Layout> */}
     </>
   );
 }
