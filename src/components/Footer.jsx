@@ -20,7 +20,7 @@ export default function FooterSec() {
           alt="MechConnect logo"
           className="footer-img"
         />
-    Ant Design ©2018 Created by Ant UED
+      MechConnect ©2022 Created by H.M.S 
       </Footer>
     </>
   );

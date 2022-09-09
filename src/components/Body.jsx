@@ -42,26 +42,54 @@ export default function Body(props) {
   };
 
   const listOfMakes = [
+    { value: "Audi", label: "Audi" },
+    { value: "BMW", label: "BMW" },
     { value: "Honda", label: "Honda" }, /// into json file as an option
-    { value: "Toyota", label: "Toyota" },
     { value: "Ford", label: "Ford" },
+    { value: "Lexus", label: "Lexus" },
+    { value: "Mercedes", label: "Mercedes" },
+    { value: "Toyota", label: "Toyota" },
   ];
 
   const modelsByMake = {
     Honda: [
       { value: "Accord", label: "Accord" },
-      { value: "Odyssee", label: "Odyssee" },
       { value: "Civic", label: "Civic" },
+      { value: "CR-X", label: "CR-X" },
+      { value: "Odyssee", label: "Odyssee" },
+      { value: "NSX", label: "NSX" },
+      { value: "S2000", label: "S2000" },
+      { value: "Prelude", label: "Prelude" },
     ],
     Toyota: [
       { value: "Corolla", label: "Corolla" },
       { value: "Camry", label: "Camry" },
+      { value: "4Runner", label: "4Runner" },
+      { value: "RAV4", label: "RAV4" },
+      { value: "Landcruiser", label: "Landcruiser" },
       { value: "Supra", label: "Supra" },
     ],
     Ford: [
-      { value: "Malibu", label: "Malibu" },
+      { value: "Edge", label: "Edge" },
+      { value: "F150", label: "F150" },
+      { value: "Fusion", label: "Fusion" },
       { value: "Impala", label: "Impala" },
+      { value: "Malibu", label: "Malibu" },
       { value: "Mustang", label: "Mustang" },
+    ],
+    Audi: [
+      { value: "A3", label: "A3" },
+      { value: "A4", label: "A4" },
+      { value: "A6", label: "A6" },
+      { value: "A8", label: "A8" },
+      { value: "Q3", label: "Q3" },
+      { value: "Q5", label: "Q5" },
+      { value: "Q8", label: "Q8" },
+    ],
+    Lexus: [
+      { value: "IS200", label: "IS200" },
+      { value: "IS350", label: "Impala" },
+      { value: "LSF", label: "LSF" },
     ],
   };
 
@@ -164,6 +192,7 @@ export default function Body(props) {
             <option value="Oil Change">Oil Change</option>
             <option value="Tire Repair">Tire Repair</option>
             <option value="Diagnosis">Diagnosis</option>
+            <option value="Routine Maintenance">Routine Maintenance</option>
           </select>
         </Form>
       </Modal>

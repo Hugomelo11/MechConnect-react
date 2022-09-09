@@ -11,7 +11,7 @@ export default function Hero() {
         {/* <video className="hero-img" muted preload="auto" autoPlay="autoplay">
         <source src="dark_cover.mp4" type="video/mp4" />
       </video> */}
-        <img src="stockimage.png" alt="hero visual" className="hero-img"/>
+        <img src="./Logos/stockimage.png" alt="hero visual" className="hero-img"/>
         <h1 className="hero-h2">
           VEHICLE SERVICE AND REPAIRS <b>DELIVERED</b>
         </h1>
