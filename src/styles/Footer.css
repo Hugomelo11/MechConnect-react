@@ -1,25 +1,19 @@
 .footer {
-    box-sizing:inherit; 
-    border: black;
-    position:absolute;
-    background-color:white;
-/* box-sizing: inherit; */ 
-width:100%;
-height: 132px;
-left: 0px;
-top: 1200px;
-text-align: center;
+  box-sizing: inherit;
 
-
-
-
+  position: relative;
+  background-color: aqua;
+  width: 100%;
+  height: 102px;
+  left: 0px;
+  /* top: 1240px; */
+  text-align: center;
 }
 
 .footer-img {
-    position:absolute;
-width: 125px;
-height: 65px;
-left: 36px;
-top: 15px;
-
+  position: absolute;
+  width: 125px;
+  height: 55px;
+  left: 36px;
+  top: 15px;
 }

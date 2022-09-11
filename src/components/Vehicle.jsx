@@ -8,7 +8,7 @@ const Vehicle = ({ vehicle }) => (
     <Layout>
       <Layout>
         <Content>
-          {/* <Card title="Work Available"> */}
+          <Card title="Work Available">
             <Card
               type="inner"
               title="Customer Information"
@@ -24,7 +24,7 @@ const Vehicle = ({ vehicle }) => (
               <p>Service: {vehicle.info.service}</p>
               <p>Time: {(new Date(vehicle.createdAt).toLocaleDateString())}</p>
             </Card>
-          {/* </Card> */}
+          </Card>
         </Content>
       </Layout>
     </Layout>

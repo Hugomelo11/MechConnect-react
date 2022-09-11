@@ -1,0 +1,13 @@
+.body {
+    text-align: center;
+    
+}
+form {
+    display: inline-block; 
+    /* align-items: center; */
+    /* border: 2px;
+    border-color: black; */
+}
+input {
+    width: 340px;
+}

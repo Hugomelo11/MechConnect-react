@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../styles/login.css'
 import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import {
@@ -8,16 +9,11 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
 } from "firebase/auth";
+import { secret } from "../Security/secrets";
 // import { secret } from "../styles/Security/secrets";
 
-const firebaseConfig = {
-    apiKey: "AIzaSyAq9hjfwhxUVxZ7RiYSsu9RNgRqcGe_q1U",
-    authDomain: "mechconnectapi.firebaseapp.com",
-    projectId: "mechconnectapi",
-    storageBucket: "mechconnectapi.appspot.com",
-    messagingSenderId: "21327002361",
-    appId: "1:21327002361:web:32b1ac57cd95e627ae0028"
-  };
+const firebaseConfig = secret
+
 function Login({ setIsLoggedIn }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -37,10 +33,12 @@ function Login({ setIsLoggedIn }) {
     if (user) {
       console.log(user.user);
       setIsLoggedIn(true);
-      navigate('/MechPage')
+      navigate('/MechPage');
+      localStorage.setItem('user', user.user)
 
     }
   };
+  
 
   const handleGoogleLogin = async () => {
     const auth = await connectAuth();
@@ -66,7 +64,7 @@ function Login({ setIsLoggedIn }) {
     ).catch((err) => alert(err.message));
     // if all ok..
     if (user) {
-      console.log(user);
+      console.log(user)
       setIsLoggedIn(true);
     }
     // if error
@@ -75,6 +73,7 @@ function Login({ setIsLoggedIn }) {
   };
 
   return (
+    <body className="body">
     <form onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="email">
         Email:
@@ -101,6 +100,7 @@ function Login({ setIsLoggedIn }) {
       <br />
       <button onClick={handleGoogleLogin}>Login with Google</button>
     </form>
+    </body>
   );
 }
 

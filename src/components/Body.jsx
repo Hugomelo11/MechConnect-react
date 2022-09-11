@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Cascader, Input, Form, Button } from "antd";
 import { Modal } from "antd";
 import React from "react";
+import { BodyCard } from "./BodyCards";
 
 export default function Body(props) {
   const [form, setForm] = useState({});
@@ -88,8 +89,23 @@ export default function Body(props) {
     ],
     Lexus: [
       { value: "IS200", label: "IS200" },
-      { value: "IS350", label: "Impala" },
+      { value: "IS350", label: "IS350" },
       { value: "LSF", label: "LSF" },
+    ],
+
+    BMW: [
+      { value: "3 series", label: "3 series" },
+      { value: "4 series", label: "4 series" },
+      { value: "5 series", label: "5 series" },
+      { value: "7 series", label: "7 series" },
+      { value: "8 series", label: "8 series" },
+      { value: "X1", label: "X1" },
+      { value: "X2", label: "X2" },
+      { value: "X3", label: "X3" },
+      { value: "X4", label: "X4" },
+      { value: "X5", label: "X5" },
+      { value: "X6", label: "X6" },
+      { value: "X7", label: "X7" },
     ],
   };
 
@@ -109,37 +125,37 @@ export default function Body(props) {
 
   console.log({ isModalOpen });
   return (
-    <>
-      <h1>This is body components</h1>
-      <Button type="primary" onClick={showModal}>
-        Book a Service
-      </Button>
-      <Modal
-        title="Book a Service"
-        show={isModalOpen}
-        onOk={formSubmit}
-        onCancel={handleCancel}
-        visible={isModalOpen}
-      >
-        <Form onSubmit={(formSubmit)}>
-          <label>Customer Information</label>
-          <br />
-          <Input
-            required
-            placeholder="First Name"
-            className="input-name"
-            onChange={updateForm}
-            value={form.firstName}
-            name="FirstName"
-          />
-          <Input
-            required
-            placeholder="Last Name"
-            className="input-name"
-            onChange={updateForm}
-            value={form.lastName}
-            name="LastName"
-          />
+    <div className="hero-body-container">
+      <div>
+        <Button type="primary" onClick={showModal} className="body-button" shape="round">
+          <b>Book a Service</b>
+        </Button>
+        <Modal
+          title="Book a Service"
+          show={isModalOpen}
+          onOk={formSubmit}
+          onCancel={handleCancel}
+          visible={isModalOpen}
+        >
+          <Form onSubmit={formSubmit}>
+            <label>Customer Information</label>
+            <br />
+            <Input
+              required
+              placeholder="First Name"
+              className="input-name"
+              onChange={updateForm}
+              value={form.firstName}
+              name="FirstName"
+            />
+            <Input
+              required
+              placeholder="Last Name"
+              className="input-name"
+              onChange={updateForm}
+              value={form.lastName}
+              name="LastName"
+            />
             <Input
               required
               placeholder="Email"
@@ -148,54 +164,61 @@ export default function Body(props) {
               value={form.Email}
               name="Email"
             />
-          <Input
-            required
-            placeholder="Address"
-            // className="input-name"
-            onChange={updateForm}
-            value={form.Address}
-            name="Address"
-          />
-          <br />
-          <label>Vehicle Information</label>
-          <br />
-          <Cascader
-            placeholder="Choose Make"
-            defaultValue=""
-            onChange={updateMake}
-            value={form.make}
-            options={listOfMakes}
-          />
-
-          {form.make && (
-            <Cascader
-              placeholder="Choose Model"
-              defaultValue=""
-              options={modelsByMake[form.make]}
-              value={form.model}
-              onChange={updateModel}
+            <Input
+              required
+              placeholder="Address"
+              // className="input-name"
+              onChange={updateForm}
+              value={form.Address}
+              name="Address"
             />
-          )}
-          <br />
-          <label>Year</label> 
-          <select value={form.year} name="year" onChange={updateForm}>
-            {Array.from({ length: 100 }, (_, i) => 2022 - i).map((year) => (
-              <option value={year} key={year}>
-                {year}
-              </option>
-            ))}
-          </select>
+            <br />
+            <label>Vehicle Information</label>
+            <br />
+            <Cascader
+              placeholder="Choose Make"
+              defaultValue=""
+              onChange={updateMake}
+              value={form.make}
+              options={listOfMakes}
+            />
 
-          <label>Type of Service</label>
-          <select value={form.serviceType} name="service" onChange={updateForm}>
-            <option value="">Choose Service</option>
-            <option value="Oil Change">Oil Change</option>
-            <option value="Tire Repair">Tire Repair</option>
-            <option value="Diagnosis">Diagnosis</option>
-            <option value="Routine Maintenance">Routine Maintenance</option>
-          </select>
-        </Form>
-      </Modal>
-    </>
+            {form.make && (
+              <Cascader
+                placeholder="Choose Model"
+                defaultValue=""
+                options={modelsByMake[form.make]}
+                value={form.model}
+                onChange={updateModel}
+              />
+            )}
+            <br />
+            <label>Year</label>
+            <select value={form.year} name="year" onChange={updateForm}>
+              {Array.from({ length: 100 }, (_, i) => 2022 - i).map((year) => (
+                <option value={year} key={year}>
+                  {year}
+                </option>
+              ))}
+            </select>
+
+            <label>Type of Service</label>
+            <select
+              value={form.serviceType}
+              name="service"
+              onChange={updateForm}
+            >
+              <option value="">Choose Service</option>
+              <option value="Oil Change">Oil Change</option>
+              <option value="Tire Repair">Tire Repair</option>
+              <option value="Diagnosis">Diagnosis</option>
+              <option value="Routine Maintenance">Routine Maintenance</option>
+            </select>
+          </Form>
+        </Modal>
+      </div>
+      <h1>Life’s too short to spend it at the repair shop</h1>
+      <BodyCard />
+    </div>
   );
 }

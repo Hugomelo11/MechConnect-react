@@ -1,13 +1,18 @@
 
-.body {
-  
+.hero-body-container {
+    /* width: 1000px; */
+    /* height: 321px; */
+    /* left: 117px; */
+    /* top: 450px; */
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:center;
+    /* border: solid; */
+    margin: auto;
+    height:fit-content;
 
-    /* box-sizing: inherit; */
-    width: 1000px;
-    height: 321px;
-    left: 117px;
-    top: 450px;
-  /* Sub-page H1 */
+
   
   }
   
@@ -23,7 +28,8 @@
 
 
   } 
-.input-name{
+
+.input-name {
     width: 40%;
     padding: 7px 10px;
     margin: 10px 0px;
@@ -46,4 +52,36 @@
   letter-spacing: -0.015em;
   
   color: #000000;
+}
+
+.body-button {
+  /* margin:10px; */
+  margin-top: 20px;
+  box-sizing: content-box;
+  font-style: bold;
+  font-size: x-large;
+  letter-spacing: 2px;
+  /* border-radius: 8px; */
+  width: 500px;
+  text-align: center;
+  color: (rgb(rgba(6), 208, 248) );
+  /* justify-content: center; */
+
+
+
+
+}
+.body-button:hover {
+  margin: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.body-cards {
+ padding: 8em;
+ padding-left: 18em;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ display: flexbox;
 }

@@ -14,46 +14,54 @@ const { Header, Sider, Content } = Layout;
 export default function MechPage() {
   const [collapsed, setCollapsed] = useState(false);
   const [allVehicles, setAllVehicles] = useState([]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
     fetch("http://localhost:5000/vehicles")
       .then((response) => response.json())
-      .then((data) => setAllVehicles(data))
+      .then((data) => {
+        setAllVehicles(data);
+        console.log({ data });
+        setSelectedIndex(1);
+      })
       .catch((err) => console.error(err));
-  }, []);
+  }, [setAllVehicles]);
 
   return (
     <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="logo" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["1"]}
-          items={[UserOutlined, UserOutlined, UserOutlined].map(
-            (icon, index) => ({
-              key: String(index + 1),
-              icon: React.createElement(icon),
-              label: `nav ${index + 1}`,
-            })
-          )}
-        />
-      </Sider>
+      <Header
+        className="site-layout-background"
+        style={{
+          padding: 0,
+        }}
+      >
+        {/* {React.createElement(
+          collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+          {
+            className: "trigger",
+            onClick: () => setCollapsed(!collapsed),
+          }
+        )} */}
+      </Header>
+        {/* <img src="./Logos/HeroIMG.jpeg" height={100}/> */}
+
       <Layout className="site-layout">
-        <Header
-          className="site-layout-background"
-          style={{
-            padding: 0,
-          }}
-        >
-          {React.createElement(
-            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-            {
-              className: "trigger",
-              onClick: () => setCollapsed(!collapsed),
-            }
-          )}
-        </Header>
+        <Sider trigger={null} collapsible collapsed={collapsed}>
+          <div className="logo" />
+          <Menu theme="light" mode="inline" defaultSelectedKeys={["0"]}>
+            {allVehicles.map((vehicle, index) => {
+              const _thisIndex = index;
+              return (
+                <Menu.Item
+                  key={index}
+                  onClick={() => setSelectedIndex(_thisIndex + 1)}
+                >
+                  {vehicle.info.FirstName} {vehicle.info.LastName}
+                </Menu.Item>
+              );
+            })}
+          </Menu>
+        </Sider>
         <Content
           className="site-layout-background"
           style={{
@@ -62,9 +70,9 @@ export default function MechPage() {
             minHeight: 280,
           }}
         >
-          {allVehicles.map((vehicle) => {
-            return <Vehicle key={vehicle._id} vehicle={vehicle} />;
-          })}
+          {allVehicles && selectedIndex && (
+            <Vehicle vehicle={allVehicles[selectedIndex - 1]} />
+          )}
         </Content>
       </Layout>
     </Layout>
