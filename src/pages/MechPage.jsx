@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import Vehicle from "../components/Vehicle";
-import {
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import "../styles/MechPage.css";
 
@@ -17,7 +12,7 @@ export default function MechPage() {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
-    fetch("http://localhost:5000/vehicles")
+    fetch("https://mechconnectapi.web.app/vehicles")
       .then((response) => response.json())
       .then((data) => {
         setAllVehicles(data);
@@ -29,21 +24,15 @@ export default function MechPage() {
 
   return (
     <Layout>
+      {/* <img height="100px" src="./Logos/carbon-fiber.jpeg"/> */}
       <Header
         className="site-layout-background"
         style={{
           padding: 0,
         }}
       >
-        {/* {React.createElement(
-          collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-          {
-            className: "trigger",
-            onClick: () => setCollapsed(!collapsed),
-          }
-        )} */}
+        
       </Header>
-        {/* <img src="./Logos/HeroIMG.jpeg" height={100}/> */}
 
       <Layout className="site-layout">
         <Sider trigger={null} collapsible collapsed={collapsed}>

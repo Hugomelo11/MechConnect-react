@@ -12,7 +12,6 @@ const Vehicle = ({ vehicle }) => (
             <Card
               type="inner"
               title="Customer Information"
-              extra={<a href="#">More</a>}
             >
               <p>First Name: {vehicle.info.FirstName}</p>
               <p>Last Name: {vehicle.info.LastName}</p>

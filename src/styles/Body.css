@@ -56,7 +56,7 @@
 
 .body-button {
   /* margin:10px; */
-  margin-top: 20px;
+  margin: 20px;
   box-sizing: content-box;
   font-style: bold;
   font-size: x-large;
@@ -64,7 +64,7 @@
   /* border-radius: 8px; */
   width: 500px;
   text-align: center;
-  color: (rgb(rgba(6), 208, 248) );
+  /* color: (rgb(rgba(6), 208, 248) ); */
   /* justify-content: center; */
 
 
@@ -72,16 +72,26 @@
 
 }
 .body-button:hover {
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
-}
+}j
 
 .body-cards {
- padding: 8em;
- padding-left: 18em;
+ /* padding: 8em; */
+ /* padding-left: 16em; */
  width: 100%;
  justify-content: center;
  align-items: center;
- display: flexbox;
+ display: flex;
+
+}
+
+.body-h1 {
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 75%;
+
 }

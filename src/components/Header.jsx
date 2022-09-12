@@ -1,10 +1,12 @@
 
 import { Link } from "react-router-dom";
 import {  Nav, Button } from "react-bootstrap";
+import { useState } from "react";
 
 
 
 export default function Header() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogout = () => {
     localStorage.clear();
     window.location.reload(false);
@@ -13,7 +15,7 @@ export default function Header() {
   return (
     <>
     <Nav activeKey="/home" className="App-header">
-      <a href="/"><img src="./Logos/MechConnectLogo.png" alt="MechConnect logo" className="header-logo"/></a>
+      <img src="./Logos/MechConnectLogo.png" href="/" alt="MechConnect logo" className="header-logo"/>
       <Nav.Item>
         <Nav.Link as={Link} to="/" className="home-button">
           Home

@@ -10,7 +10,7 @@ export default function Body(props) {
   async function formSubmit(e) {
     e.preventDefault(); /// stops the page refresh
     try {
-      const results = await fetch("http://localhost:5000/newVehicle", {
+      const results = await fetch("https://mechconnectapi.web.app/newVehicle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -127,7 +127,12 @@ export default function Body(props) {
   return (
     <div className="hero-body-container">
       <div>
-        <Button type="primary" onClick={showModal} className="body-button" shape="round">
+        <Button
+          type="primary"
+          onClick={showModal}
+          className="body-button"
+          shape="round"
+        >
           <b>Book a Service</b>
         </Button>
         <Modal
@@ -217,8 +222,12 @@ export default function Body(props) {
           </Form>
         </Modal>
       </div>
-      <h1>Life’s too short to spend it at the repair shop</h1>
-      <BodyCard />
+      <div className="body-h1">
+        <h1>Life’s too short to spend it at the repair shop</h1>
+      </div>
+      <div className="body-cards">
+        <BodyCard />
+      </div>
     </div>
   );
 }

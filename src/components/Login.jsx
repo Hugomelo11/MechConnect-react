@@ -10,6 +10,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { secret } from "../Security/secrets";
+import { Button } from "antd";
 // import { secret } from "../styles/Security/secrets";
 
 const firebaseConfig = secret
@@ -73,7 +74,7 @@ function Login({ setIsLoggedIn }) {
   };
 
   return (
-    <body className="body">
+    <body className="body-login">
     <form onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="email">
         Email:
@@ -95,10 +96,10 @@ function Login({ setIsLoggedIn }) {
         />
       </label>
       <br />
-      <button onClick={handleLogin}>Login</button>&nbsp;
-      <button onClick={handleSignUp}>Sign Up</button>
+      <Button onClick={handleLogin}>Login</Button>&nbsp;
+      <Button onClick={handleSignUp}>Sign Up</Button>
       <br />
-      <button onClick={handleGoogleLogin}>Login with Google</button>
+      <Button onClick={handleGoogleLogin}>Login with Google</Button>
     </form>
     </body>
   );

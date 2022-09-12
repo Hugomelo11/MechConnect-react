@@ -4,12 +4,12 @@ const { Meta } = Card;
 
 export const BodyCard = () => (
   <div className="body-cards">
-    <Row gutter={16}>
+    <Row gutter={100}>
       <Col span={8}>
         <Card
           hoverable
           style={{
-            width: 220,
+            width: 240,
             border: 0,
           }}
           cover={
@@ -37,7 +37,7 @@ export const BodyCard = () => (
           cover={
             <img
               alt="example"
-              src="./Logos/wrench.webp"
+              src="./Logos/wrenches.webp"
             />
           }
         >
@@ -52,7 +52,7 @@ export const BodyCard = () => (
         <Card
           hoverable
           style={{
-            width: 220,
+            width: 240,
             border: 0,
             
           }}

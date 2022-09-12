@@ -8,8 +8,8 @@ const IconFont = createFromIconfontCN({
 });
 export default function FooterSec() {
   return (
-    <>
-      <Footer className="footer">
+    <div className="footer">
+      <Footer>
         <Space>
           <IconFont type="icon-github" />
           <IconFont type="icon-linkedn" />
@@ -22,6 +22,6 @@ export default function FooterSec() {
         />
         MechConnect ©2022 Created by H.M.S
       </Footer>
-    </>
+    </div>
   );
 }

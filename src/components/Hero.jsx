@@ -18,9 +18,7 @@ export default function Hero() {
             VEHICLE SERVICE AND REPAIRS <b>DELIVERED</b>
           </h1>
           <h3 className="hero-h3">
-            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+            Service at your home or office · 24/7 Online Booking · Quality Service Guaranteed
           </h3>
         </div>
       </div>
