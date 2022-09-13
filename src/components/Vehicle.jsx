@@ -11,8 +11,7 @@ const Vehicle = ({ vehicle }) => (
           <Card title="Work Available">
             <Card
               type="inner"
-              title="Customer Information"
-            >
+              title="Customer Information">
               <p>First Name: {vehicle.info.FirstName}</p>
               <p>Last Name: {vehicle.info.LastName}</p>
               <p>Email: {vehicle.info.Email}</p>

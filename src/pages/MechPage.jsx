@@ -24,14 +24,13 @@ export default function MechPage() {
 
   return (
     <Layout>
-      {/* <img height="100px" src="./Logos/carbon-fiber.jpeg"/> */}
       <Header
         className="site-layout-background"
         style={{
           padding: 0,
         }}
       >
-        
+
       </Header>
 
       <Layout className="site-layout">

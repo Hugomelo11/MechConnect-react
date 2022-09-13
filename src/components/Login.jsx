@@ -11,7 +11,6 @@ import {
 } from "firebase/auth";
 import { secret } from "../Security/secrets";
 import { Button } from "antd";
-// import { secret } from "../styles/Security/secrets";
 
 const firebaseConfig = secret
 
