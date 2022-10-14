@@ -5,3 +5,5 @@
 
  API access stores in .env and secrets.js
 
+# backend IP must be configured before accessing MechPage
+    must login to mongodb backend and allow access to ip address
